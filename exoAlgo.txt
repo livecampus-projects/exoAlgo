@@ -4,6 +4,9 @@
 Algorithme calculer_resultat
     Variable A, B, return: entier
     Début
+        //Valeur de return par défaut
+        return <- 1
+
         // Étape 1 : Demander à l'utilisateur de saisir les nombres A et B
         afficher("Entrez la valeur de A (colonnes) : ")
         lire(A)
@@ -12,9 +15,7 @@ Algorithme calculer_resultat
 
         // Vérifier la première ligne
         Si (A >= 98 ET A <= 189) ET (B >= 10 ET B <= 20)
-            Si (A >= 98 ET A <= 172)
-                return <- 1
-            Sinon Si (A >= 173 ET A <= 189)
+            Si (A >= 173 ET A <= 189)
                 return <- 2
             Fin Si
         Fin Si
