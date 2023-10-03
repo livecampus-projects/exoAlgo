@@ -2,40 +2,22 @@
 // Prévoir les cas non valides (blanc / hors tableau)
 
 Algorithme calculer_resultat
-    Variable A, B: entier
+    Variable A, B, return: entier
     Début
         // Étape 1 : Demander à l'utilisateur de saisir les nombres A et B
-        Écrire "Entrez la valeur de A (colonnes) : "
-        Lire A
-        Écrire "Entrez la valeur de B (lignes) : "
-        Lire B
+        afficher("Entrez la valeur de A (colonnes) : ")
+        lire(A)
+        afficher("Entrez la valeur de B (lignes) : ")
+        lire(B)
 
-        // Étape 2 : Vérifier les valeurs de A et B et déterminer le résultat
-        Si (10 <= A <= 20) Alors
-            Si (10 <= B <= 20) Alors
-                Renvoyer 1
-            Sinon Si (21 <= B <= 27) Alors
-                Renvoyer 1
-            Sinon Si (28 <= B <= 35) Alors
-                Renvoyer 1
-            Sinon Si (36 <= B <= 45) Alors
-                Si (B = 42) Alors
-                    Renvoyer 2
-                Sinon
-                    Renvoyer 3
-                Fin Si
-            Sinon
-                // Ne rien renvoyer en cas de "x" (vide)
-            Fin Si
-        Sinon Si (21 <= A <= 27) Alors
-            Si (10 <= B <= 20) Alors
-                Renvoyer 1
-            Sinon Si (21 <= B <= 27) Alors
-                Renvoyer 2
-            Sinon Si (28 <= B <= 35) Alors
-                Renvoyer 2
-            Sinon Si (36 <= B <= 45) Alors
-                Renvoyer 3
+        // Vérifier la première ligne
+        Si (A >= 98 ET A <= 189) ET (B >= 10 ET B <= 20)
+            Si (A >= 98 ET A <= 172)
+                return <- 1
+            Sinon Si (A >= 173 ET A <= 189)
+                return <- 2
             Fin Si
         Fin Si
+
+        afficher("Le résultat est " & return)
     Fin
