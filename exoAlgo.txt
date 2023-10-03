@@ -14,17 +14,13 @@ Algorithme calculer_resultat
         lire(B)
 
         // Étape 2 : Vérifier la première ligne
-        Si (A >= 98 ET A <= 189) ET (B >= 10 ET B <= 20)
-            Si (A >= 173 ET A <= 189)
-                return <- 2
-            Fin Si
+        Si (A >= 173 ET A <= 189) ET (B >= 10 ET B <= 20)
+            return <- 2
         Fin Si
 
         // Étape 3 : Vérifier la deuxieme ligne
-        Si (A >= 98 ET A <= 189) ET (B >= 21 ET B <= 27)
-            Si (A >= 168 ET A <= 189)
-                return <- 2
-            Fin Si
+        Si (A >= 168 ET A <= 189) ET (B >= 21 ET B <= 27)
+            return <- 2
         Fin Si
 
         // Étape 4 : Vérifier la troisieme ligne
@@ -49,9 +45,7 @@ Algorithme calculer_resultat
 
         // Étape 6 : Vérifier la 5eme ligne
         Si (A >= 168 ET A <= 208) ET (B >= 46 ET B <= 58)
-            Si (A >= 168 ET A <= 208)
-                return <- 3
-            Fin Si
+            return <- 3
         Fin Si
 
         // Étape 7 : On retourne le résultat
