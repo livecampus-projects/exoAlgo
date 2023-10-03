@@ -20,5 +20,39 @@ Algorithme calculer_resultat
             Fin Si
         Fin Si
 
+        // Vérifier la deuxieme ligne
+        Si (A >= 98 ET A <= 189) ET (B >= 21 ET B <= 27)
+            Si (A >= 168 ET A <= 189)
+                return <- 2
+            Fin Si
+        Fin Si
+
+        // Vérifier la troisieme ligne
+        Si (A >= 98 ET A <= 208) ET (B >= 28 ET B <= 35)
+            Si (A >= 154 ET A <= 189)
+                return <- 2
+            Fin Si
+            Si (A >= 190 ET A <= 208)
+                return <- 3
+            Fin Si
+        Fin Si
+
+        // Vérifier la 4eme ligne
+        Si (A >= 141 ET A <= 208) ET (B >= 36 ET B <= 45)
+            Si (A >= 141 ET A <= 180)
+                return <- 2
+            Fin Si
+            Si (A >= 181 ET A <= 208)
+                return <- 3
+            Fin Si
+        Fin Si
+
+        // Vérifier la 5eme ligne
+        Si (A >= 168 ET A <= 208) ET (B >= 46 ET B <= 58)
+            Si (A >= 168 ET A <= 208)
+                return <- 3
+            Fin Si
+        Fin Si
+
         afficher("Le résultat est " & return)
     Fin
