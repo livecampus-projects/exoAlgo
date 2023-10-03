@@ -1,0 +1,41 @@
+// Demander à l’utilisateur deux nombres A (colonnes) et B (lignes), renvoyer le résultat (1,2,3) selon ce tableau :
+// Prévoir les cas non valides (blanc / hors tableau)
+
+Algorithme calculer_resultat
+    Variable A, B: entier
+    Début
+        // Étape 1 : Demander à l'utilisateur de saisir les nombres A et B
+        Écrire "Entrez la valeur de A (colonnes) : "
+        Lire A
+        Écrire "Entrez la valeur de B (lignes) : "
+        Lire B
+
+        // Étape 2 : Vérifier les valeurs de A et B et déterminer le résultat
+        Si (10 <= A <= 20) Alors
+            Si (10 <= B <= 20) Alors
+                Renvoyer 1
+            Sinon Si (21 <= B <= 27) Alors
+                Renvoyer 1
+            Sinon Si (28 <= B <= 35) Alors
+                Renvoyer 1
+            Sinon Si (36 <= B <= 45) Alors
+                Si (B = 42) Alors
+                    Renvoyer 2
+                Sinon
+                    Renvoyer 3
+                Fin Si
+            Sinon
+                // Ne rien renvoyer en cas de "x" (vide)
+            Fin Si
+        Sinon Si (21 <= A <= 27) Alors
+            Si (10 <= B <= 20) Alors
+                Renvoyer 1
+            Sinon Si (21 <= B <= 27) Alors
+                Renvoyer 2
+            Sinon Si (28 <= B <= 35) Alors
+                Renvoyer 2
+            Sinon Si (36 <= B <= 45) Alors
+                Renvoyer 3
+            Fin Si
+        Fin Si
+    Fin
