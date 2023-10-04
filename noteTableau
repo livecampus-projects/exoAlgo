@@ -1,0 +1,15 @@
+Algorithme note
+    Variable position_note, compteur, tableau note[10]: entier
+    Debut
+        Pour compteur AllantDe 1 A 10 ParPasDe 1
+            // J'ai inventé random on imagine que c'est une fonction externe qui retourne 1 à 20
+            note[0] <- compteur * random(1:20)
+        FinPour
+
+        afficher("Quel note voir ? ")
+        lire(position_note)
+
+        Si position_note >= 0:
+            afficher("Voici votre note :" & note[position_note])
+        FinSi
+    Fin
