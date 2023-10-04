@@ -1,0 +1,16 @@
+Algorithme somme_jusquau_nombre
+    Variables nombre, somme, index : entier
+    Debut
+        // Demande à l'utilisateur
+        afficher("Entier supérieur ou égal à 1")
+        lire(nombre)
+
+        // Calcul
+        somme <- 0
+        Pour index AllantDe 1 A nombre ParPasDe 1
+            somme <- somme + index
+        FinPour
+
+        // Fin
+        afficher(somme)
+    Fin
