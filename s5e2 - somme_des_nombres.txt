@@ -1,4 +1,15 @@
 Algorithme somme_des_nombres
     Variable nombre, somme: entier
     Debut
+        nombre <- 0
+        somme <- 0
+
+        // -1 Permet de sortir de la boucle
+        TanQue nombre != -1
+            somme <= somme + nombre
+            affiche("Nombre ?")
+            lire(nombre)
+        FinTanQue
+
+        afficher("la somme est " & somme)
     Fin

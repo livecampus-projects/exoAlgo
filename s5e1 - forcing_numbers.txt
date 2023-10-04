@@ -1,6 +1,6 @@
 Algorithme forcing_numbers
     Variable i: entier
-    Début
+    Debut
         afficher("Entrez la valeur de i : ")
         lire(i)
         TantQue i < 1 OU i > 3
