@@ -1,0 +1,35 @@
+Function AnimalType(type_animal: string): string
+Variables
+Debut
+    Si type_animal === "vache"
+        retourner("Mmmme")
+    Sinon Si type_animal === "chien"
+        retourner("Woof")
+    Sinon Si type_animal === "chat"
+        retourner("Miaou")
+    Sinon Si type_animal === "coq"
+        retourner("Cocorico")
+    Sinon
+        retourner("Type d'animal inconnu")
+    FinSi
+Fin
+
+Algorithme cri_animal
+Variables animal: string
+Debut
+    animal <- AnimalType("vache")
+    afficher(animal)
+
+    animal <- AnimalType("chien")
+    afficher(animal)
+
+    animal <- AnimalType("chat")
+    afficher(animal)
+
+    animal <- AnimalType("coq")
+    afficher(animal)
+
+    //Retourne une erreur
+    animal <- AnimalType("lapin")
+    afficher(animal)
+Fin
