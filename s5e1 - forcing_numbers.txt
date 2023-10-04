@@ -1,4 +1,4 @@
-Algorithme calculer_resultat
+Algorithme forcing_numbers
     Variable i: entier
     Début
         afficher("Entrez la valeur de i : ")
