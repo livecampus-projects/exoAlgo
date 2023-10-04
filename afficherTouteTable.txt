@@ -1,14 +1,14 @@
 Algorithme afficher_toute_table
     Variable table, compteur: entier
     Debut
-        table <- 0
+        table <- 1
         
-        Pour table AllantDe 0 a 9 ParPasDe 1
-        
-            afficher("table de " & table)
-            compteur <- 0
+        Pour table AllantDe 1 a 9 ParPasDe 1
 
-            Pour compteur AllantDe 0 a 9 ParPasDe 1
+            afficher("table de " & table)
+            compteur <- 1
+
+            Pour compteur AllantDe 1 a 9 ParPasDe 1
                 afficher(compteur & " x " & table & " = " & compteur*table)
             FinPour
         FinPour
