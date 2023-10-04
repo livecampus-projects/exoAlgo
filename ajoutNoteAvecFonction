@@ -1,0 +1,32 @@
+Function AjouterUneNote(index: entier): entier
+Variables texte: string
+          note: entier
+Debut
+    // Demander la note
+    texte <- "Note " & index + 1 & " ?"
+    afficher(texte)
+
+    // Demande a l'utilisateur
+    lire(note)
+    retourner(note)
+Fin
+
+Algorithme tableau_notes_fonction
+Variables note, index : entier
+          texte : string
+          tableau notes[10]: entier
+Debut
+  // Renseigner les notes
+  Pour index AllantDe 0 A 9 ParPasDe 1
+    // Ajouter au tableau
+    notes[index] <- AjouterUneNote(index)
+  FinPour
+
+  // Demander quelle note afficher
+  afficher("Quelle note souhaitez-vous afficher ?")
+  lire(index)
+
+  // Afficher la note
+  texte <- "La note numÃ©ro " & index & " est : " & notes[index - 1]
+  afficher(texte)
+Fin
