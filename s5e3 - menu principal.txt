@@ -1,0 +1,26 @@
+Algorithme menu
+    Variable choix: entier
+    Debut
+        choix <- 0
+
+        // -1 Permet de sortir de la boucle
+        TanQue choix != 3
+            affiche("Nenu Principal :")
+            affiche("1 - pour algo 1")
+            affiche("2 - pour algo 2")
+            affiche("3 - Sortir du programme")
+
+            Si choix = 1
+                affiche("Choix 1")
+            FinSi
+
+            Si choix = 2
+                affiche("Choix 2")
+            FinSi
+            
+            Si choix = 3
+                affiche("Fin")
+            FinSi
+        FinTanQue
+
+    Fin
