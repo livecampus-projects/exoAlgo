@@ -5,7 +5,7 @@ Algorithme afficher_toute_table
 
             afficher("table de " & table)
 
-            Pour compteur AllantDe 1 a 9 ParPasDe 1
+            Pour compteur AllantDe 1 a 10 ParPasDe 1
                 afficher(compteur & " x " & table & " = " & compteur*table)
             FinPour
         FinPour
