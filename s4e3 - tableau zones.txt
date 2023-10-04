@@ -3,7 +3,7 @@
 
 Algorithme calculer_resultat
     Variable A, B, return: entier
-    Début
+    Debut
         //Valeur de return par défaut
         return <- 1
 
