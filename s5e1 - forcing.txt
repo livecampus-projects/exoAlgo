@@ -1,0 +1,12 @@
+Algorithme calculer_resultat
+    Variable i: entier
+    Début
+        afficher("Entrez la valeur de i : ")
+        lire(i)
+        TantQue i < 1 ET i > 3
+            afficher("Entrez la valeur de i : ")
+            lire(i)
+        FinTantQue
+
+        afficher("Votre nombre est correcte !");
+    Fin
