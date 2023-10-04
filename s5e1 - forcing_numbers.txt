@@ -3,7 +3,7 @@ Algorithme forcing_numbers
     Début
         afficher("Entrez la valeur de i : ")
         lire(i)
-        TantQue i < 1 ET i > 3
+        TantQue i < 1 OU i > 3
             afficher("Entrez la valeur de i : ")
             lire(i)
         FinTantQue
