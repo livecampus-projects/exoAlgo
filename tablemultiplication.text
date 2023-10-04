@@ -4,9 +4,9 @@ Algorithme multiplication
         afficher("Entrez la table a afficher : ")
         lire(table)
 
-        nombre <- 0
+        compteur <- 0
         afficher("Voici la table de " & table & " :")
-        Pour nombre AllantDe 0 a 9 ParPasDe 1
-            afficher(nombre & " x " & table & " = " & nombre*table)
+        Pour compteur AllantDe 0 a 9 ParPasDe 1
+            afficher(compteur & " x " & table & " = " & compteur*table)
         FinPour
     Fin
