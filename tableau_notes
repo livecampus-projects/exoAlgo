@@ -1,0 +1,27 @@
+Algorithme tableau_notes
+Variables note, index, matiere : entier
+          texte : chaine de caracteres
+          tableau notes[3][10]: entier
+Debut
+  // Renseigner les notes
+  Pour matiere AllantDe 0 A 2 ParPasDe 1
+    Pour index AllantDe 0 A 9 ParPasDe 1
+      // Demander la note
+      texte <- "Note " & index + 1 & "pour la matière " & matiere + 1 & " ?"
+      afficher(texte)
+      lire(note)
+      // Ajouter au tableau
+      notes[matiere][index] <- note
+    FinPour
+  FinPour
+
+  // Demander quelle note afficher
+  afficher("Quelle matière souhaitez-vous afficher ?")
+  lire(matiere)
+  afficher("Quelle note souhaitez-vous afficher ?")
+  lire(index)
+
+  // Afficher la note
+  texte <- "La note numéro " & index & " de la matière " & matiere & " est : " & notes[matiere - 1][index - 1]
+  afficher(texte)
+Fin

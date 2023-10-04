@@ -1,17 +1,23 @@
-Algorithme note
-    Variable note_max, position_note, compteur, tableau note[10]: entier
-    Debut
-        note_max <- 10
+Algorithme tableau_notes
+Variables note, index : entier
+          texte : chaine de caracteres
+          tableau notes[10]: entier
+Debut
+  // Renseigner les notes
+  Pour index AllantDe 0 A 9 ParPasDe 1
+    // Demander la note
+    texte <- "Note " & index + 1 & " ?"
+    afficher(texte)
+    lire(note)
+    // Ajouter au tableau
+    notes[index] <- note
+  FinPour
 
-        Pour compteur AllantDe 1 A note_max ParPasDe 1
-            // J'ai inventé random on imagine que c'est une fonction externe qui retourne 1 à 20
-            note[0] <- compteur * random(1:20)
-        FinPour
+  // Demander quelle note afficher
+  afficher("Quelle note souhaitez-vous afficher ?")
+  lire(index)
 
-        afficher("Quel note voir ? ")
-        lire(position_note)
-
-        Si note_max <= position_note Et position_note >= 0:
-            afficher("Voici votre note :" & note[position_note])
-        FinSi
-    Fin
+  // Afficher la note
+  texte <- "La note numÃ©ro " & index & " est : " & notes[index - 1]
+  afficher(texte)
+Fin

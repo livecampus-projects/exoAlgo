@@ -1,0 +1,21 @@
+Algorithme affichage_nombre
+Variables nombre, ligne, index : entier
+          texte : chaine de caracteres
+Debut
+  // Demande le nombre à la personne
+  afficher("Entier supérieur ou égal à 1 ?")
+  lire(nombre)
+
+  // Un affichage par entier entre 1 et nombre
+  Pour ligne AllantDe 1 A nombre ParPasDe 1
+
+    // Construction de la ligne
+    texte <- ""
+    Pour index AllantDe 1 A ligne ParPasDe 1
+      texte <- texte & index
+    FinPour
+
+    // Affichage de la ligne
+    afficher(texte)
+  FinPour
+Fin
