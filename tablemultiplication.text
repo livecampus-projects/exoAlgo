@@ -1,0 +1,12 @@
+Algorithme multiplication
+    Variable table, compteur: entier
+    Debut
+        afficher("Entrez la table a afficher : ")
+        lire(table)
+
+        nombre <- 0
+        afficher("Voici la table de " & table & " :")
+        Pour nombre AllantDe 0 a 9 ParPasDe 1
+            afficher(nombre & " x " & table & " = " & nombre*table)
+        FinPour
+    Fin
